@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Annotation profile for pacientes-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+        </processorPath>
+        <module name="pacientes-service" />
+        <module name="cita-service" />
+        <module name="Gateway-Service" />
+        <module name="Informe-service" />
+        <module name="eureka-server" />
+        <module name="HistorialClinica-service" />
+      </profile>
+      <profile name="Annotation profile for empleados-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
+        </processorPath>
+        <module name="empleados-service" />
+        <module name="Franquicia-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Franquicia-service" options="-parameters" />
+      <module name="Gateway-Service" options="-parameters" />
+      <module name="HistorialClinica-service" options="-parameters" />
+      <module name="Informe-service" options="-parameters" />
+      <module name="cita-service" options="-parameters" />
+      <module name="empleados-service" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="pacientes-service" options="-parameters" />
+    </option>
+  </component>
+</project>
