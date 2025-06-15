@@ -2,6 +2,9 @@ server:
   port: 8082
 
 spring:
+  cloud:
+    config:
+      enabled: false
   application:
     name: citas-service
   datasource:
@@ -11,14 +14,13 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
-      ddl-auto: validate
+      ddl-auto: update
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
         format_sql: true
   flyway:
-    enabled: true
-    locations: classpath:db/migration
+    enabled: false
 
 eureka:
   client:
@@ -28,6 +30,12 @@ eureka:
 feign:
   client:
     config:
+      pacientes-service:
+        url: "http://localhost:8083"  # La URL de tu servicio citas-service, donde está corriendo en el puerto 8082
+      clinicas-service:
+        url: "http://localhost:8081"  # La URL de tu servicio citas-service, donde está corriendo en el puerto 8082
+      personal-service:
+        url: "http://localhost:8084"  # La URL de tu servicio citas-service, donde está corriendo en el puerto 8082
       default:
         connectTimeout: 5000
         readTimeout: 5000

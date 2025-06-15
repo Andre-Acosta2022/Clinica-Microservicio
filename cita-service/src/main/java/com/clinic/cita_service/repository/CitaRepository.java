@@ -13,9 +13,12 @@ import java.util.List;
 public interface CitaRepository extends JpaRepository<Cita, Long> {
     List<Cita> findByDoctorIdAndFechaCita(Long doctorId, LocalDate fechaCita);
 
-    @Query("SELECT c FROM Cita c WHERE c.doctorId = :doctorId AND c.fechaCita = :fecha " +
-            "AND ((c.horaCita <= :horaFin AND ADDTIME(c.horaCita, SEC_TO_TIME(c.duracionMinutos * 60)) >= :horaInicio))")
+    @Query(value = "SELECT * FROM cita c " +
+            "WHERE c.doctor_id = :doctorId " +
+            "AND c.fecha_cita = :fecha " +
+            "AND ((c.hora_cita <= :horaFin " +
+            "AND ADDTIME(c.hora_cita, SEC_TO_TIME(c.duracion_minutos * 60)) >= :horaInicio))",
+            nativeQuery = true)
     List<Cita> findConflictingCitas(Long doctorId, LocalDate fecha, LocalTime horaInicio, LocalTime horaFin);
-
     List<Cita> findByPacienteId(Long pacienteId);
 }

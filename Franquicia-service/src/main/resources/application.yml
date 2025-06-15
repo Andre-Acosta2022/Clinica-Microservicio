@@ -2,19 +2,22 @@ server:
   port: 8081
 
 spring:
+  cloud:
+    config:
+      enabled: false
   application:
     name: clinicas-service
   datasource:
       url: jdbc:mysql://localhost:3306/clinicas_db  # Cambiado a MySQL
       username: root  # Cambiado a 'root' o el usuario correspondiente
-      password: 123456  # Cambia la contraseña a la correspondiente
+      password: 123456  # Cambia la contraseï¿½a a la correspondiente
       driver-class-name: com.mysql.cj.jdbc.Driver  # Driver para MySQL
   jpa:
     hibernate:
       ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
+        dialect: org.hibernate.dialect.MySQLDialect
         format_sql: true
 
 eureka:
@@ -25,6 +28,8 @@ eureka:
 feign:
   client:
     config:
+      citas-service:
+        url: "http://localhost:8082"  # La URL de tu servicio citas-service, donde estÃ¡ corriendo en el puerto 8082
       default:
         connectTimeout: 5000
         readTimeout: 5000
