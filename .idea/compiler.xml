@@ -13,7 +13,7 @@
         <module name="empleados-service" />
         <module name="Franquicia-service" />
       </profile>
-      <profile name="Annotation profile for pacientes-service" enabled="true">
+      <profile name="Annotation profile for Informe-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
