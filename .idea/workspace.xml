@@ -1,7 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{}</component>
-  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3e492e01-f4d9-4d78-b801-1f2f70779b49" name="Changes" comment="add service pagos">
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/Config/AwsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/DTO/ArchivoResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/DTO/HistorialDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/DTO/NuevoRegistroDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/DTO/RegistroMedicoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/controller/HistorialController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/controller/RegistroController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/domain/ArchivoAdjunto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/domain/HistorialClinico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/domain/RegistroMedico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/exception/DuplicateRecordException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/exception/HistorialNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/exception/PersonalNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/exception/RegistroNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/repository/ArchivoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/repository/HistorialRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/repository/RegistroMedicoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/service/AlmacenamientoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/service/ArchivoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/service/HistorialService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/service/RegistroService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/DTO/CitaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/DTO/PagoRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/DTO/PagoResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/DTO/ProcesarPagoRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/DTO/ReembolsoRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/DTO/WebhookEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/client/CitaClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/controller/PagoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/controller/WebhookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/domain/EstadoPago.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/domain/MetodoPago.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/domain/Pago.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/domain/Transaccion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/exception/PagoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/exception/PagoNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/exception/PasarelaPagoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/repository/PagoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/repository/TransaccionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/service/ConciliacionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/service/PagoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/service/PasarelaPagoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/service/PayPalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/service/ReembolsoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/service/StripeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HistorialClinica-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/HistorialClinica-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/HistorialClinicaServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/HistorialClinicaServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HistorialClinica-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pagos-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Pagos-Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/PagosServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/PagosServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pagos-Service/src/main/resources/application.properties" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Andre-Acosta2022&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Andre-Acosta2022/Clinica-Microservicio.git&quot;,
+    &quot;accountId&quot;: &quot;6aa2f180-0916-410e-8f32-d60ea45d2c94&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2yYd2hY5UgOEcgH5sg43eB9yIXo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.HistorialClinicaServiceApplication.executor": "Run",
+    "Spring Boot.PagosServiceApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Clinica-Microservicio/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Clinica-Microservicio\HistorialClinica-service\src\main\java\com\clinic\HistorialClinica_service" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PagosServiceApplication">
+    <configuration name="CitaServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="cita-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.clinic.cita_service.CitaServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EmpleadosServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="empleados-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.clinic.empleados_service.EmpleadosServiceApplication" />
@@ -58,5 +208,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3e492e01-f4d9-4d78-b801-1f2f70779b49" name="Changes" comment="" />
+      <created>1750015234494</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1750015234494</updated>
+      <workItem from="1750015236243" duration="602000" />
+      <workItem from="1750038394721" duration="17514000" />
+    </task>
+    <task id="LOCAL-00001" summary="add service pagos">
+      <option name="closed" value="true" />
+      <created>1750015440408</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1750015440408</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add service pagos">
+      <option name="closed" value="true" />
+      <created>1750015558220</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1750015558220</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add service pagos" />
+    <option name="LAST_COMMIT_MESSAGE" value="add service pagos" />
   </component>
 </project>
