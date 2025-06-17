@@ -3,6 +3,12 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Config-service" />
+      </profile>
       <profile name="Annotation profile for empleados-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -13,15 +19,16 @@
         <module name="empleados-service" />
         <module name="Franquicia-service" />
       </profile>
-      <profile name="Annotation profile for HistorialClinica-service" enabled="true">
+      <profile name="Annotation profile for Notificaciones-Service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
-        <module name="pacientes-service" />
+        <module name="Notificaciones-Service" />
         <module name="cita-service" />
+        <module name="pacientes-service" />
         <module name="Gateway-Service" />
         <module name="Informe-service" />
         <module name="eureka-server" />
@@ -32,10 +39,12 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Config-service" options="-parameters" />
       <module name="Franquicia-service" options="-parameters" />
       <module name="Gateway-Service" options="-parameters" />
       <module name="HistorialClinica-service" options="-parameters" />
       <module name="Informe-service" options="-parameters" />
+      <module name="Notificaciones-Service" options="-parameters" />
       <module name="Pagos-Service" options="-parameters" />
       <module name="cita-service" options="-parameters" />
       <module name="empleados-service" options="-parameters" />

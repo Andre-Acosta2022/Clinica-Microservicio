@@ -13,10 +13,12 @@
         <option value="$PROJECT_DIR$/pacientes-service/pom.xml" />
         <option value="$PROJECT_DIR$/Franquicia-service/pom.xml" />
         <option value="$PROJECT_DIR$/HistorialClinica-service/pom.xml" />
+        <option value="$PROJECT_DIR$/Config-service/pom.xml" />
+        <option value="$PROJECT_DIR$/Notificaciones-Service/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_24" default="true" project-jdk-name="openjdk-24" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21 (3)" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

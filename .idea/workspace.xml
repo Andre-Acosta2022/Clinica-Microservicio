@@ -5,62 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e492e01-f4d9-4d78-b801-1f2f70779b49" name="Changes" comment="add service pagos">
-      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/Config/AwsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/DTO/ArchivoResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/DTO/HistorialDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/DTO/NuevoRegistroDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/DTO/RegistroMedicoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/controller/HistorialController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/controller/RegistroController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/domain/ArchivoAdjunto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/domain/HistorialClinico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/domain/RegistroMedico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/exception/DuplicateRecordException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/exception/HistorialNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/exception/PersonalNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/exception/RegistroNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/repository/ArchivoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/repository/HistorialRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/repository/RegistroMedicoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/service/AlmacenamientoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/service/ArchivoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/service/HistorialService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/service/RegistroService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/DTO/CitaDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/DTO/PagoRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/DTO/PagoResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/DTO/ProcesarPagoRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/DTO/ReembolsoRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/DTO/WebhookEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/client/CitaClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/controller/PagoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/controller/WebhookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/domain/EstadoPago.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/domain/MetodoPago.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/domain/Pago.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/domain/Transaccion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/exception/PagoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/exception/PagoNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/exception/PasarelaPagoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/repository/PagoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/repository/TransaccionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/service/ConciliacionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/service/PagoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/service/PasarelaPagoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/service/PayPalService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/service/ReembolsoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/service/StripeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Franquicia-service/src/main/resources/Banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/resources/Banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Informe-service/src/main/resources/Banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pagos-Service/src/main/resources/Banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cita-service/src/main/resources/Banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/empleados-service/src/main/resources/Banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/clinic/eureka_server/config/CacheConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/Banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pacientes-service/src/main/resources/Banner.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Franquicia-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Franquicia-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Franquicia-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Franquicia-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HistorialClinica-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/HistorialClinica-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/HistorialClinicaServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service/HistorialClinicaServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HistorialClinica-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/HistorialClinica-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Informe-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Informe-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pagos-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Pagos-Service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/PagosServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pagos-Service/src/main/java/com/clinic/Pagos_Service/PagosServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pagos-Service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pagos-Service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Pagos-Service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cita-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cita-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cita-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cita-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empleados-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/empleados-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empleados-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/empleados-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/com/clinic/eureka_server/EurekaServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/clinic/eureka_server/EurekaServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pacientes-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pacientes-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pacientes-service/src/main/java/com/clinic/pacientes_service/PacientesServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/pacientes-service/src/main/java/com/clinic/pacientes_service/PacientesServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pacientes-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pacientes-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +51,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -89,7 +67,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Andre-Acosta2022/Clinica-Microservicio.git&quot;,
-    &quot;accountId&quot;: &quot;6aa2f180-0916-410e-8f32-d60ea45d2c94&quot;
+    &quot;accountId&quot;: &quot;73cdf550-44d9-45c9-ac81-edc40027224f&quot;
   }
 }</component>
   <component name="KubernetesApiPersistence">{}</component>
@@ -112,17 +90,27 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.CitaServiceApplication.executor": "Run",
+    "Spring Boot.EmpleadosServiceApplication.executor": "Run",
+    "Spring Boot.EurekaServerApplication.executor": "Run",
+    "Spring Boot.FranquiciaServiceApplication.executor": "Run",
     "Spring Boot.HistorialClinicaServiceApplication.executor": "Run",
+    "Spring Boot.InformeServiceApplication.executor": "Run",
+    "Spring Boot.PacientesServiceApplication.executor": "Run",
     "Spring Boot.PagosServiceApplication.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "eureka-server",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Clinica-Microservicio/HistorialClinica-service/src/main/java/com/clinic/HistorialClinica_service",
+    "last_opened_file_path": "C:/Users/XD/Documents/Clinica-Microservicio/Pagos-Service/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "spring",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -131,7 +119,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Clinica-Microservicio\HistorialClinica-service\src\main\java\com\clinic\HistorialClinica_service" />
+      <recent name="C:\Users\XD\Documents\Clinica-Microservicio\Pagos-Service\src\main\resources" />
+      <recent name="C:\Users\XD\Documents\Clinica-Microservicio\pacientes-service\src\main\resources" />
+      <recent name="C:\Users\XD\Documents\Clinica-Microservicio\HistorialClinica-service\src\main\resources" />
+      <recent name="C:\Users\XD\Documents\Clinica-Microservicio\Informe-service\src\main\resources" />
+      <recent name="C:\Users\XD\Documents\Clinica-Microservicio\Franquicia-service\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -148,6 +140,14 @@
     <configuration name="CitaServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="cita-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.clinic.cita_service.CitaServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Config-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.clinic.configservice.ConfigServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -194,6 +194,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NotificacionesServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Notificaciones-Service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.clinic.notificacionesservice.NotificacionesServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PacientesServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="pacientes-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.clinic.pacientes_service.PacientesServiceApplication" />
@@ -212,8 +220,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26094.121" />
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121" />
       </set>
     </attachedChunks>
   </component>
@@ -227,6 +235,7 @@
       <updated>1750015234494</updated>
       <workItem from="1750015236243" duration="602000" />
       <workItem from="1750038394721" duration="17514000" />
+      <workItem from="1750093963725" duration="18718000" />
     </task>
     <task id="LOCAL-00001" summary="add service pagos">
       <option name="closed" value="true" />
@@ -253,5 +262,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add service pagos" />
     <option name="LAST_COMMIT_MESSAGE" value="add service pagos" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
