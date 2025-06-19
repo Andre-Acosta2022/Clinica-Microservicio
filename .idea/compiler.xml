@@ -19,16 +19,16 @@
         <module name="empleados-service" />
         <module name="Franquicia-service" />
       </profile>
-      <profile name="Annotation profile for Notificaciones-Service" enabled="true">
+      <profile name="Annotation profile for pacientes-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
-        <module name="Notificaciones-Service" />
-        <module name="cita-service" />
         <module name="pacientes-service" />
+        <module name="cita-service" />
+        <module name="Notificaciones-Service" />
         <module name="Gateway-Service" />
         <module name="Informe-service" />
         <module name="eureka-server" />
