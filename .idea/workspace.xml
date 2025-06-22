@@ -4,37 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e492e01-f4d9-4d78-b801-1f2f70779b49" name="Changes" comment="corren en eureka server">
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/DTO/CitaEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/DTO/NotificacionDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/DTO/PagoEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/config/KafkaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/controller/NotificacionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/domain/Canal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/domain/Notificacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/domain/NotificacionLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/domain/enums/EstadoNotificacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/domain/enums/ResultadoEnvio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/domain/enums/TipoCanal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/domain/enums/TipoNotificaciòn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/exception/CanalDeshabilitadoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/exception/CanalNoSoportadoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/kafka/CitaEventListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/kafka/PagoEventListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/repository/CanalRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/repository/LogNotificacionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/repository/NotificacionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/scheduler/RecordatorioScheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/service/EmailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/service/NotificacionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/service/NotificacionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="3e492e01-f4d9-4d78-b801-1f2f70779b49" name="Changes" comment="add notificaciones">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notificaciones-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Notificaciones-Service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/NotificacionesServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice/NotificacionesServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notificaciones-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Notificaciones-Service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empleados-service/src/main/java/com/clinic/empleados_service/domain/Disponibilidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/empleados-service/src/main/java/com/clinic/empleados_service/domain/Disponibilidad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empleados-service/src/main/java/com/clinic/empleados_service/domain/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/empleados-service/src/main/java/com/clinic/empleados_service/domain/Doctor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,41 +56,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "Database connection parameters found",
-    "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.CitaServiceApplication.executor": "Run",
-    "Spring Boot.EmpleadosServiceApplication.executor": "Run",
-    "Spring Boot.EurekaServerApplication.executor": "Run",
-    "Spring Boot.FranquiciaServiceApplication.executor": "Run",
-    "Spring Boot.HistorialClinicaServiceApplication.executor": "Run",
-    "Spring Boot.InformeServiceApplication.executor": "Run",
-    "Spring Boot.NotificacionesServiceApplication.executor": "Run",
-    "Spring Boot.PacientesServiceApplication.executor": "Run",
-    "Spring Boot.PagosServiceApplication.executor": "Run",
-    "git-widget-placeholder": "eureka-server",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/XD/Documents/Clinica-Microservicio/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "spring",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;Database connection parameters found&quot;,
+    &quot;Notification.DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CitaServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EmpleadosServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.FranquiciaServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.HistorialClinicaServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.InformeServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.NotificacionesServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PacientesServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PagosServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;eureka-server&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/XD/Documents/Clinica-Microservicio/Notificaciones-Service/src/main/java/com/clinic/notificacionesservice&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;spring&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -140,7 +113,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PagosServiceApplication">
+  <component name="RunManager" selected="Spring Boot.EmpleadosServiceApplication">
     <configuration name="CitaServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="cita-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.clinic.cita_service.CitaServiceApplication" />
@@ -220,6 +193,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.CitaServiceApplication" />
+      <item itemvalue="Spring Boot.EmpleadosServiceApplication" />
+      <item itemvalue="Spring Boot.ConfigServiceApplication" />
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.FranquiciaServiceApplication" />
+      <item itemvalue="Spring Boot.GatewayServiceApplication" />
+      <item itemvalue="Spring Boot.HistorialClinicaServiceApplication" />
+      <item itemvalue="Spring Boot.InformeServiceApplication" />
+      <item itemvalue="Spring Boot.NotificacionesServiceApplication" />
+      <item itemvalue="Spring Boot.PacientesServiceApplication" />
+      <item itemvalue="Spring Boot.PagosServiceApplication" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -242,6 +228,9 @@
       <workItem from="1750093963725" duration="35236000" />
       <workItem from="1750174604429" duration="1449000" />
       <workItem from="1750199523379" duration="3081000" />
+      <workItem from="1750358192093" duration="265000" />
+      <workItem from="1750400399658" duration="8429000" />
+      <workItem from="1750551686818" duration="534000" />
     </task>
     <task id="LOCAL-00001" summary="add service pagos">
       <option name="closed" value="true" />
@@ -275,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750121493343</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add notificaciones">
+      <option name="closed" value="true" />
+      <created>1750358393971</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1750358393971</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +282,8 @@
     <MESSAGE value="update pagos/historial" />
     <MESSAGE value="add service pagos" />
     <MESSAGE value="corren en eureka server" />
-    <option name="LAST_COMMIT_MESSAGE" value="corren en eureka server" />
+    <MESSAGE value="add notificaciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="add notificaciones" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

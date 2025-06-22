@@ -1,5 +1,6 @@
 package com.clinic.empleados_service.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -20,6 +21,7 @@ public class Disponibilidad {
 
     @ManyToOne
     @JoinColumn(name = "doctor_id", nullable = false)
+    @JsonBackReference // Evita la serialización recursiva
     private Doctor doctor;
 
     @Enumerated(EnumType.STRING)
