@@ -15,37 +15,33 @@ import java.util.Optional;
 public class ClinicaController {
     private final ClinicaService clinicaService;
 
+
+
     @GetMapping
     public ResponseEntity<List<Clinica>> getAllClinicas() {
-        return ResponseEntity.ok(clinicaService.findAllClinicas());
-    }
-
-    @GetMapping("/{id}")
-    public ResponseEntity<Clinica> getClinicaById(@PathVariable Long id) {
-        Optional<Clinica> clinica = clinicaService.findClinicaById(id);
-        return clinica.map(ResponseEntity::ok)
-                .orElseGet(() -> ResponseEntity.notFound().build());
+        return ResponseEntity.ok(clinicaService.getAllClinicas()); // Devuelve todas las clínicas
     }
 
     @PostMapping
     public ResponseEntity<Clinica> createClinica(@RequestBody Clinica clinica) {
         return ResponseEntity.status(HttpStatus.CREATED)
-                .body(clinicaService.saveClinica(clinica));
+                .body(clinicaService.saveClinica(clinica)); // Guardar la clínica
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteClinica(@PathVariable Long id) {
-        clinicaService.deleteClinica(id);
-        return ResponseEntity.noContent().build();
+        clinicaService.deleteClinica(id); // Elimina la clínica por el ID proporcionado
+        return ResponseEntity.noContent().build(); // Respuesta exitosa sin contenido
     }
 
-    @GetMapping("/{clinicaId}/sedes")
-    public ResponseEntity<List<Sede>> getSedesByClinica(@PathVariable Long clinicaId) {
-        return ResponseEntity.ok(clinicaService.findSedesByClinicaId(clinicaId));
+    @PutMapping("/{id}")
+    public ResponseEntity<Clinica> updateClinica(@PathVariable Long id, @RequestBody Clinica clinicaDetails) {
+        Clinica updatedClinica = clinicaService.updateClinica(id, clinicaDetails);
+        return ResponseEntity.ok(updatedClinica); // Actualizar la clínica
     }
 
-    @GetMapping("/sedes/{sedeId}/disponible")
-    public ResponseEntity<Boolean> checkSedeDisponible(@PathVariable Long sedeId) {
-        return ResponseEntity.ok(clinicaService.isSedeDisponible(sedeId));
+    @GetMapping("/sedes")
+    public ResponseEntity<List<Sede>> getSedes() {
+        return ResponseEntity.ok(clinicaService.getSedes()); // Obtener las sedes de la única clínica
     }
 }

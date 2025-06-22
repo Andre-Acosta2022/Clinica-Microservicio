@@ -1,6 +1,7 @@
 package com.clinic.empleados_service.controller;
 
 import com.clinic.empleados_service.DTO.DoctorDTO;
+import com.clinic.empleados_service.DTO.EspecialidadDTO;
 import com.clinic.empleados_service.service.DoctorService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -44,7 +45,20 @@ public class DoctorController {
     }
 
     @GetMapping("/{doctorId}/especialidad")
-    public ResponseEntity<Long> getEspecialidadDoctor(@PathVariable Long doctorId) {
-        return ResponseEntity.ok(doctorService.getEspecialidadId(doctorId));
+    public ResponseEntity<EspecialidadDTO> getEspecialidadDoctor(@PathVariable Long doctorId) {
+        return ResponseEntity.ok(doctorService.getEspecialidadDTO(doctorId));
+    }
+    // Método para actualizar un doctor
+    @PutMapping("/{id}")
+    public ResponseEntity<DoctorDTO> updateDoctor(@PathVariable Long id, @Valid @RequestBody DoctorDTO doctorDTO) {
+        DoctorDTO updatedDoctor = doctorService.updateDoctor(id, doctorDTO);
+        return ResponseEntity.ok(updatedDoctor);
+    }
+
+    // Método para eliminar un doctor
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteDoctor(@PathVariable Long id) {
+        doctorService.deleteDoctor(id);
+        return ResponseEntity.noContent().build();
     }
 }

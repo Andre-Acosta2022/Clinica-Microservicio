@@ -1,5 +1,6 @@
 package com.clinic.empleados_service.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -27,5 +28,6 @@ public class Especialidad {
     private String codigo;
 
     @OneToMany(mappedBy = "especialidad", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonBackReference  // Evita la serialización recursiva
     private List<Doctor> doctores;
 }

@@ -1,5 +1,8 @@
 package com.clinic.Franquicia_service.service;
+import com.clinic.Franquicia_service.domain.Clinica;
 import com.clinic.Franquicia_service.domain.Sede;
+import com.clinic.Franquicia_service.exception.ResourceNotFoundException;
+import com.clinic.Franquicia_service.repository.ClinicaRepository;
 import com.clinic.Franquicia_service.repository.SedeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -12,26 +15,26 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class SedeService {
     private final SedeRepository sedeRepository;
+    private final ClinicaRepository clinicaRepository;
 
-    public List<Sede> findAllSedes() {
-        return sedeRepository.findAll();
-    }
-
-    public Optional<Sede> findSedeById(Long id) {
-        return sedeRepository.findById(id);
-    }
-
+    // Guardar una sede asociada a la clínica
     @Transactional
     public Sede saveSede(Sede sede) {
+        Optional<Clinica> clinicaOptional = clinicaRepository.findById(sede.getClinica().getId());
+        if (clinicaOptional.isEmpty()) {
+            throw new ResourceNotFoundException("La clínica con ID " + sede.getClinica().getId() + " no existe.");
+        }
+
+        sede.setClinica(clinicaOptional.get()); // Asignar la clínica a la sede
         return sedeRepository.save(sede);
     }
 
-    @Transactional
+    // Eliminar una sede
     public void deleteSede(Long id) {
         sedeRepository.deleteById(id);
     }
 
-    public List<Sede> findActiveSedes() {
-        return sedeRepository.findByEstado("ACTIVO");
+    public List<Sede> findAllSedes() {
+        return sedeRepository.findByClinicaId(14L); // Retorna solo las sedes de la clínica 1
     }
 }

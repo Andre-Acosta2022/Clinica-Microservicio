@@ -1,6 +1,7 @@
 package com.clinic.empleados_service.service;
 
 import com.clinic.empleados_service.DTO.DoctorDTO;
+import com.clinic.empleados_service.DTO.EspecialidadDTO;
 import com.clinic.empleados_service.client.FranquiciasClient;
 import com.clinic.empleados_service.domain.Doctor;
 import com.clinic.empleados_service.domain.Especialidad;
@@ -79,7 +80,20 @@ public class DoctorService {
                 .orElseThrow(() -> new ResourceNotFoundException("Doctor no encontrado"));
         return doctor.getEspecialidad().getId();
     }
-
+    public EspecialidadDTO getEspecialidadDTO(Long doctorId) {
+        Doctor doctor = doctorRepository.findById(doctorId)
+                .orElseThrow(() -> new ResourceNotFoundException("Doctor no encontrado"));
+        Especialidad especialidad = doctor.getEspecialidad();
+        return convertToDTO(especialidad); // Debes tener un método convertToDTO(Especialidad)
+    }
+    private EspecialidadDTO convertToDTO(Especialidad especialidad) {
+        return EspecialidadDTO.builder()
+                .id(especialidad.getId())
+                .nombre(especialidad.getNombre())
+                .descripcion(especialidad.getDescripcion())
+                .codigo(especialidad.getCodigo())
+                .build();
+    }
     private DoctorDTO convertToDTO(Doctor doctor) {
         return DoctorDTO.builder()
                 .id(doctor.getId())
@@ -89,4 +103,34 @@ public class DoctorService {
                 .turno(doctor.getTurno())
                 .build();
     }
+    @Transactional
+    public DoctorDTO updateDoctor(Long id, DoctorDTO doctorDTO) {
+        Doctor doctor = doctorRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Doctor no encontrado con ID: " + id));
+
+        // Actualizando los atributos del doctor
+        doctor.setNombreCompleto(doctorDTO.getNombreCompleto());
+        doctor.setCmp(doctorDTO.getCmp());
+
+        // Actualizando especialidad y turno si es necesario
+        Especialidad especialidad = especialidadRepository.findById(doctorDTO.getEspecialidad().getId())
+                .orElseThrow(() -> new ResourceNotFoundException("Especialidad no encontrada"));
+
+        Turno turno = turnoRepository.findById(doctorDTO.getTurno().getId())
+                .orElseThrow(() -> new ResourceNotFoundException("Turno no encontrado"));
+
+        doctor.setEspecialidad(especialidad);
+        doctor.setTurno(turno);
+
+        Doctor updatedDoctor = doctorRepository.save(doctor);
+        return convertToDTO(updatedDoctor);
+    }
+
+    @Transactional
+    public void deleteDoctor(Long id) {
+        Doctor doctor = doctorRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Doctor no encontrado con ID: " + id));
+        doctorRepository.delete(doctor);
+    }
+
 }

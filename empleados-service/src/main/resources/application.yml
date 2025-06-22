@@ -8,7 +8,7 @@ spring:
   application:
     name: personal-service
   datasource:
-    url: jdbc:mysql://localhost:3306/personal_db?useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/personal_db
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -17,7 +17,6 @@ spring:
       ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQLDialect
         format_sql: true
   flyway:
     enabled: false

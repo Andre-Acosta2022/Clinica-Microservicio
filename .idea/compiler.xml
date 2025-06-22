@@ -9,16 +9,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Config-service" />
       </profile>
-      <profile name="Annotation profile for empleados-service" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
-        </processorPath>
-        <module name="empleados-service" />
-        <module name="Franquicia-service" />
-      </profile>
       <profile name="Annotation profile for pacientes-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -34,6 +24,16 @@
         <module name="eureka-server" />
         <module name="Pagos-Service" />
         <module name="HistorialClinica-service" />
+      </profile>
+      <profile name="Annotation profile for Franquicia-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
+        </processorPath>
+        <module name="empleados-service" />
+        <module name="Franquicia-service" />
       </profile>
     </annotationProcessing>
   </component>

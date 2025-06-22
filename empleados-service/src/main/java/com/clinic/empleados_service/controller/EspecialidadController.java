@@ -32,4 +32,17 @@ public class EspecialidadController {
     public ResponseEntity<EspecialidadDTO> getEspecialidadById(@PathVariable Long id) {
         return ResponseEntity.ok(especialidadService.findById(id));
     }
+    // Agregar método para actualizar una especialidad
+    @PutMapping("/{id}")
+    public ResponseEntity<EspecialidadDTO> updateEspecialidad(@PathVariable Long id, @Valid @RequestBody EspecialidadDTO especialidadDTO) {
+        EspecialidadDTO updatedEspecialidad = especialidadService.updateEspecialidad(id, especialidadDTO);
+        return ResponseEntity.ok(updatedEspecialidad);
+    }
+
+    // Agregar método para eliminar una especialidad
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteEspecialidad(@PathVariable Long id) {
+        especialidadService.deleteEspecialidad(id);
+        return ResponseEntity.noContent().build();
+    }
 }

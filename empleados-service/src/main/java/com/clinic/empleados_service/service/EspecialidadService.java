@@ -51,4 +51,24 @@ public class EspecialidadService {
                 .codigo(especialidad.getCodigo())
                 .build();
     }
+    @Transactional
+    public EspecialidadDTO updateEspecialidad(Long id, EspecialidadDTO especialidadDTO) {
+        Especialidad especialidad = especialidadRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Especialidad no encontrada con ID: " + id));
+
+        especialidad.setNombre(especialidadDTO.getNombre());
+        especialidad.setDescripcion(especialidadDTO.getDescripcion());
+        especialidad.setCodigo(especialidadDTO.getCodigo());
+
+        Especialidad updatedEspecialidad = especialidadRepository.save(especialidad);
+        return convertToDTO(updatedEspecialidad);
+    }
+
+    @Transactional
+    public void deleteEspecialidad(Long id) {
+        Especialidad especialidad = especialidadRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Especialidad no encontrada con ID: " + id));
+        especialidadRepository.delete(especialidad);
+    }
+
 }
